@@ -1,0 +1,96 @@
+{
+  "start_node": "Q1",
+  "nodes": {
+    "Q1": {
+      "id": "Q1",
+      "type": "question",
+      "question_text": "Które dziedziny najbardziej Cię pasjonują i sprawiają Ci najmniej trudności?",
+      "options": [
+        {
+          "text": "Przedmioty ścisłe, logiczne myślenie, nowe technologie (Matematyka, Fizyka, Informatyka, Chemia).",
+          "next_id": "Q2_TECH"
+        },
+        {
+          "text": "Przedmioty społeczne, komunikacja, języki, historia, sztuka (Polski, Historia, Języki Obce, WOS).",
+          "next_id": "Q2_HUMAN"
+        }
+      ]
+    },
+    "Q2_TECH": {
+      "id": "Q2_TECH",
+      "type": "question",
+      "question_text": "Jaki jest Twój główny cel po ukończeniu szkoły średniej?",
+      "options": [
+        {
+          "text": "Chcę od razu zdobyć praktyczny zawód i być gotowy do pracy, mając opcję zdania matury.",
+          "next_id": "Q3_PRACTICAL"
+        },
+        {
+          "text": "Chcę w pełni skupić się na nauce do matury i iść na najlepszą możliwą uczelnię wyższą.",
+          "next_id": "R_LICEUM_MATFIZ"
+        }
+      ]
+    },
+    "Q2_HUMAN": {
+      "id": "Q2_HUMAN",
+      "type": "question",
+      "question_text": "Wolisz analizować teksty, argumentować i poznawać kulturę czy zajmować się zdrowiem i naturą (Biologia/Chemia)?",
+      "options": [
+        {
+          "text": "Analiza, pisanie, prawo, komunikacja, sztuka (prawo, dziennikarstwo, filologia).",
+          "next_id": "R_LICEUM_HUMAN"
+        },
+        {
+          "text": "Przyroda, organizmy żywe, chemia, zdrowie (Medycyna, farmacja, biotechnologia).",
+          "next_id": "R_LICEUM_BIOCHEM"
+        }
+      ]
+    },
+    "Q3_PRACTICAL": {
+      "id": "Q3_PRACTICAL",
+      "type": "question",
+      "question_text": "Która dziedzina techniczna jest dla Ciebie najbardziej interesująca?",
+      "options": [
+        {
+          "text": "Programowanie, sieci komputerowe, tworzenie stron i aplikacji.",
+          "next_id": "R_TECHNIKUM_INFO"
+        },
+        {
+          "text": "Mechanika, elektronika, automatyka, procesy produkcyjne i maszyny.",
+          "next_id": "R_TECHNIKUM_MECH"
+        }
+      ]
+    },
+
+    "R_TECHNIKUM_INFO": {
+      "id": "R_TECHNIKUM_INFO",
+      "type": "recommendation",
+      "title": "Technik Programista / Technik Informatyk",
+      "description": "<b>Zalecana Szkoła Średnia:</b> Technikum (kierunek: Informatyk lub Programista). Zyskasz kwalifikacje zawodowe, które pozwolą Ci na szybkie podjęcie pracy. <br /><br /> <b>Zalecane Studia:</b> Informatyka, Inżynieria Oprogramowania, Cyberbezpieczeństwo (na Politechnice)."
+    },
+    "R_TECHNIKUM_MECH": {
+      "id": "R_TECHNIKUM_MECH",
+      "type": "recommendation",
+      "title": "Technik Mechanik / Technik Automatyk",
+      "description": "<b>Zalecana Szkoła Średnia:</b> Technikum (kierunek: Mechanik lub Automatyk). Kształcenie praktyczne przygotuje Cię do pracy w przemyśle. <br /><br /> <b>Zalecane Studia:</b> Mechanika i Budowa Maszyn, Automatyka i Robotyka, Mechatronika (na Politechnice)."
+    },
+    "R_LICEUM_MATFIZ": {
+      "id": "R_LICEUM_MATFIZ",
+      "type": "recommendation",
+      "title": "Liceum Ogólnokształcące - Profil Mat-Fiz/Informatyczny",
+      "description": "<b>Zalecana Szkoła Średnia:</b> Liceum Ogólnokształcące (profil Matematyczno-Fizyczny lub Matematyczno-Informatyczny). Najlepsze przygotowanie do matury rozszerzonej. <br /><br /> <b>Zalecane Studia:</b> Inżynieria, Matematyka, Finanse, Elektronika (na Politechnice/Uniwersytecie Ekonomicznym)."
+    },
+    "R_LICEUM_HUMAN": {
+      "id": "R_LICEUM_HUMAN",
+      "type": "recommendation",
+      "title": "Liceum Ogólnokształcące - Profil Humanistyczny/Językowy",
+      "description": "<b>Zalecana Szkoła Średnia:</b> Liceum Ogólnokształcące (profil Humanistyczny lub Językowy). Skupienie na umiejętnościach komunikacyjnych i analitycznych. <br /><br /> <b>Zalecane Studia:</b> Prawo, Dziennikarstwo, Filologia, Stosunki Międzynarodowe (na Uniwersytecie)."
+    },
+    "R_LICEUM_BIOCHEM": {
+      "id": "R_LICEUM_BIOCHEM",
+      "type": "recommendation",
+      "title": "Liceum Ogólnokształcące - Profil Biologiczno-Chemiczny",
+      "description": "<b>Zalecana Szkoła Średnia:</b> Liceum Ogólnokształcące (profil Biologiczno-Chemiczny). Najlepsza droga do zawodów medycznych. <br /><br /> <b>Zalecane Studia:</b> Medycyna, Farmacja, Weterynaria, Biotechnologia, Dietetyka (na Uniwersytecie Medycznym/Przyrodniczym)."
+    }
+  }
+}
