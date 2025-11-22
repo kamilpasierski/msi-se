@@ -71,7 +71,7 @@ function QuizEngine() {
             <button
                 className="mt-6 w-full py-3 bg-red-600 text-white rounded-lg hover:bg-red-700
                            transition duration-150 font-semibold shadow-md transform hover:scale-[1.01]"
-                // Dodajemy resetowanie stanu isQuizActive
+                //Resetowanie stanu isQuizActive
                 onClick={() => {
                     setCurrentNodeId(data.start_node);
                     setIsQuizActive(false);
